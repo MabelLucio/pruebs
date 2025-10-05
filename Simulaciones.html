@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simuladores — Órbitas e Impactos</title>
+  <!-- Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0b0f14;
+      color: #eaf2ff;
+    }
+    /* --- Simulador de órbitas --- */
+    #orbits-container {
+      padding: 1rem;
+      background: #111827;
+    }
+    #orbits-canvas {
+      display: block;
+      width: 100%;
+      height: 600px;
+      background: #000;
+    }
+    .orbits-controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    /* --- Simulador de impacto --- */
+    #impact-simulator-container {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      min-height: 600px;
+    }
+    .panel-impact {
+      background: #1f2937;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+    #map-impact {
+      height: 100%;
+      width: 100%;
+    }
+    .btn {
+      display: block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .primary-btn {
+      background: #79c0ff;
+      color: #0b0f14;
+    }
+    .ghost-btn {
+      background: transparent;
+      color: #eaf2ff;
+      border: 1px solid #eaf2ff;
+    }
+  </style>
+</head>
+<body>
+  <!-- SIMULADOR DE ÓRBITAS -->
+  <section id="orbits-container">
+    <h2>Simulación de Órbitas</h2>
+    <div class="orbits-controls">
+      <label>Semi-eje Mayor (UA):
+        <input type="range" id="semi-major-axis" min="1.5" max="5" step="0.1" value="2.5" />
+        <span id="semi-major-value">2.5</span>
+      </label>
+      <label>Excentricidad:
+        <input type="range" id="eccentricity" min="0" max="0.9" step="0.05" value="0.2" />
+        <span id="eccentricity-value">0.2</span>
+      </label>
+      <label>Inclinación:
+        <input type="range" id="inclination" min="0" max="0.5" step="0.05" value="0.1" />
+        <span id="inclination-value">0.1</span>
+      </label>
+      <button id="start-orbit" class="btn primary-btn">Iniciar</button>
+      <button id="reset-orbit" class="btn ghost-btn">Reiniciar</button>
+      <button id="pause-orbit" class="btn ghost-btn">Pausar</button>
+    </div>
+    <canvas id="orbits-canvas" width="800" height="600"></canvas>
+    <div>
+      Tiempo: <span id="time-display">0.00</span> años —
+      Distancia: <span id="distance-display">-</span> UA —
+      Velocidad: <span id="velocity-display">-</span> UA/año
+    </div>
+  </section>
+
+  <!-- SIMULADOR DE IMPACTOS -->
+  <section>
+    <h2>Simulador de Impactos</h2>
+    <div id="impact-simulator-container">
+      <aside class="panel-impact">
+        <form id="impact-form">
+          <label>Diámetro (m)
+            <input id="diametro" type="number" value="50" />
+          </label>
+          <label>Densidad (kg/m³)
+            <input id="densidad" type="number" value="3000" />
+          </label>
+          <label>Velocidad (km/s)
+            <input id="velocidad" type="number" value="20" />
+          </label>
+          <label>Ángulo de entrada (°)
+            <input id="angulo" type="number" value="45" />
+          </label>
+          <label>Latitud
+            <input id="lat" type="number" step="0.0001" value="25.4146" />
+          </label>
+          <label>Longitud
+            <input id="lng" type="number" step="0.0001" value="-101.0076" />
+          </label>
+          <button type="submit" class="btn primary-btn">Simular Impacto</button>
+          <button type="button" id="reset" class="btn ghost-btn">Restablecer</button>
+        </form>
+        <div id="impact-details" style="margin-top:1rem;">—</div>
+      </aside>
+      <main id="map-impact"></main>
+    </div>
+  </section>
+
+  <!-- LIBRERÍAS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- TUS SCRIPTS -->
+<script src="orbits-simulator.js"></script>
+<script src="impact-simulator.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Meteor Madness - Divulgatron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes de Google para un estilo más moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a tu nuevo archivo de estilos principal -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <a href="#home" class="logo-link">
+                <!-- Usando la imagen del logo que me proporcionaste. Asegúrate de que el nombre del archivo sea correcto y esté en la misma carpeta. -->
+                <img src="Divulgatron.png" alt="Logo de Divulgatron" class="site-logo">
+            </a>
+            <h1 class="main-page-title">Meteor <span class="highlight">Madness</span></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="#Divulgatron">Divulgatron</a>
+                        <ul class="dropdown">
+                            <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#redes-sociales">Redes sociales</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Meteoritos">Meteorites</a>
+                        <ul class="dropdown">
+                            <li><a href="#conceptos-basicos">Conceptos básicos</a></li>
+                            <li><a href="#origen-formacion">Origen y Formación en el Sistema Solar</a></li>
+                            <li><a href="#clasificacion-tipos">Clasificación y Tipos de Meteoritos</a></li>
+                            <li><a href="#fisica-impactos">Física de los Impactos</a></li>
+                            <li><a href="#impactos-famosos">Impactos de Meteoritos Famosos</a></li>
+                            <li><a href="#asteroides-peligrosos">Asteroides Potencialmente Peligrosos (PHP)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Recursos">Recursos</a>
+                        <ul class="dropdown">
+                            <li><a href="#cursos-fisica">Cursos de Física</a></li>
+                            <li><a href="#mecanica-celeste-estudiantes">Curso de mecánica celeste para estudiantes</a></li>
+                            <li><a href="#mecanica-celeste-profesionales">Curso de mecánica celeste para profesionales</a></li>
+                            <li><a href="#dataset">Dataset</a></li>
+                            <li><a href="#ia-jupiter">IA-Júpiter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Simulations">Simulaciones</a>
+                        <ul class="dropdown">
+                            <li><a href="#orbits-simulation">Órbitas</a></li>
+                            <li><a href="#impact-map-simulation">Mapa de Zona de Impacto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero-banner" class="hero-banner">
+            <div class="hero-content">
+                <h2>Explora el Universo de los Impactos Cósmicos</h2>
+                <p>Bienvenido a Meteor Madness, un lugar donde puedes encontrar todo sobre meteoritos y el fascinante mundo de la astronomía.</p>
+                <a href="#Meteoritos" class="btn primary-btn">Descubre Más</a>
+            </div>
+        </section>
+
+        <section id="Divulgatron" class="content-section">
+            <h2 id="quienes-somos">¿Quiénes somos?</h2>
+            <p>Somos un grupo de estudiantes de la Universidad Autónoma de Coahuila, provenientes de diferentes facultades de la misma, principalmente de la Facultad de Ciencias Físico-Matemáticas.<br> Jóvenes que buscan compartir el conocimiento científico
+                con la sociedad en general poniendo énfasis en los niños y adolescentes, con el fin de que se deje de ver a la ciencia como algo aburrido y complicado, y se vea como una herramienta para entender el mundo que nos rodea de una forma divertida
+                y con cariño.</p>
+
+            <div class="team-photos">
+                <!-- Aquí irían las fotitos de los integrantes -->
+                <div class="team-member"><img src="placeholder-team.jpg" alt="Miembro del equipo 1"><span>Miembro 1</span></div>
+                <div class="team-member"><img src="placeholder-team.jpg" alt="Miembro del equipo 2"><span>Miembro 2</span></div>
+                <div class="team-member"><img src="placeholder-team.jpg" alt="Miembro del equipo 3"><span>Miembro 3</span></div>
+            </div>
+
+            <h2 id="proyectos">Proyectos</h2>
+            <p>Actualmente estamos trabajando en varios proyectos, entre los que destacan:<br>
+                <ul>
+                    <li>Exposición de experimentos durante las noches de observatorio organizadas en la Facultad de Ciencias Físico-Matemáticas de la Universidad Autónoma de Coahuila.</li>
+                    <li>Asistencia a la Noche de Estrellas, organizada por la Sociedad de Astronomía de Saltillo.</li>
+                    <li>Pláticas en distintos niveles escolares: Preparatoria, Secundaria y Primaria.</li>
+                    <li>Participación en competencias.</li>
+                    <li>Colaboraciones con distintos grupos como lo son: SAS, AEIF de la UADY.</li>
+                </ul>
+            </p>
+
+            <div class="project-photos">
+                <!-- Aquí irían las fotitos de los proyectos -->
+                <div class="project-item"><img src="placeholder-project.jpg" alt="Proyecto 1"><span>Proyecto Noches de Observatorio</span></div>
+                <div class="project-item"><img src="placeholder-project.jpg" alt="Proyecto 2"><span>Participación Noche de Estrellas</span></div>
+            </div>
+
+            <h2 id="redes-sociales">Redes sociales</h2>
+            <p>Te invitamos a seguirnos en nuestras redes sociales:<br>
+                <ul>
+                    <li><a href="https://whatsapp.com/channel/0029VbBNlWi7oQhhSEgdog00" target="_blank">Canal de difusión de WhatsApp <img src="whatsapp-icon.png" alt="WhatsApp" class="social-icon"></a></li>
+                    <li><a href="https://www.instagram.com/divulgatron.uac/" target="_blank">Instagram <img src="instagram-icon.png" alt="Instagram" class="social-icon"></a></li>
+                    <li><a href="https://www.facebook.com/share/178SV9W4tz/" target="_blank">Facebook <img src="facebook-icon.png" alt="Facebook" class="social-icon"></a></li>
+                </ul>
+            </p>
+            <!-- Puedes añadir más iconos o imágenes aquí -->
+        </section>
+
+        <section id="Meteoritos" class="content-section">
+            <h2 id="conceptos-basicos">Conceptos Básicos</h2>
+            <p>Los meteoros, meteoritos y meteoroides. Los tres términos suenan parecido y suelen confundirse. De hecho, los une algo más que sus nombres similares, ya que estos están relacionados con los detalles de luz llamados "estrellas fugaces" que a veces
+                se ven cruzando el cielo. Pero llamamos a un mismo objeto de distintas formas, dependiendo de dónde se encuentre.<br>
+            </p>
+            <p>¿Qué son los meteoroides?<br> De acuerdo con la explicación que ofrece la NASA en su sitio web, los meteoroides son las rocas que aún se encuentran en el espacio. El tamaño de los meteoroides varía desde granos de polvo hasta pequeños asteroides.<br>
+                A veces, son el resultado del choque entre un asteroide (objeto rocoso que orbita alrededor del Sol, que es más grande que un meteoroide pero más pequeño que un planeta) y otro, lo que puede causar la separación de pequeñas piezas. También
+                pueden provenir de los cometas.</p>
+            <p>¿Qué son los meteoros?<br> Cuando los meteoroides entran en la atmósfera de la Tierra (o de otro planeta, como Marte) a gran velocidad se transforman y se queman. Esas bolas de fuego resultantes reciben el nombre de meteoros.<br> De acuerdo con
+                la agencia estadounidense, “cada día caen sobre la Tierra unas 48.5 toneladas de material meteórico. Casi todo el material se vaporiza en la atmósfera terrestre, dejando una estela brillante cariñosamente llamada “estrellas fugaces”.<br> Usualmente
+                suelen verse varios meteoros por hora en la noche, aunque en ocasiones el número aumenta drásticamente: estos fenómenos se denominan lluvias de meteoros.</p>
+            <p>¿Qué son los meteoritos?<br> En algunos trozos de roca más grandes sobreviven el tiempo suficiente y terminan estrellándose contra la superficie de un planeta.<br> “Cuando un meteoroide sobrevive a un viaje a través de la atmósfera y toca el suelo,
+                se denomina meteorito”, explica la agencia espacial estadounidense.</p>
+
+            <h3 id="origen-formacion">Origen y formación de los meteoritos en el sistema solar.</h3>
+            <p>Los meteoritos más antiguos son residuos de los primeros procesos que tuvieron lugar en nuestro sistema solar, hace 4.600 millones de años. (No se debe confundir el origen del Sistema Solar con el origen del Universo, o Big Bang, que ocurrió hace
+                aproximadamente 13,700 millones de años). Nuestro sistema solar se formó por contracción de una nube interestelar de polvo y gas. Como esta nube giraba lentamente sobre sí misma, dió lugar a un disco aplanado en rotación, al que nos referiremos
+                en adelante como la nebulosa solar. La mayor parte del polvo y el gas se acumularon en la zona central de la nebulosa, engrosando poco a poco la protoestrella que habría de convertirse más tarde en nuestro sol.</p>
+
+            <h3 id="clasificacion-tipos">Clasificación y Tipos de de asteroides</h3>
+            <p>Las tres amplias clases de composición de asteroides son C (Condritas), S (Pedregoso) y M (Metálicos).<br> Los asteroides de tipo C (Condrita) son los más comúnes. Probablemente se componen de rocas de arcilla y silicato, y tienen apariencia
+                oscura. Se encuentran entre los objetos más antiguos del Sistema Solar. Así mismo, los S (Pedregosos) se componen de materiales de silicato y níquel-hierro, mientras que los tipo M (Metálicos) son de níquel-hierro, la diferencia en comoposición
+                de los asteroides están relacionadas con cuán lejos del Sol se formaron.<br> Algunos experimentaron altas temperaturas después de formarse y derretirse parcialmente con el hierro hundiéndose hacia el centro y forzando la lava basáltica
+                (volcánica) a la superficie.</p>
+
+            <h3 id="impactos-famosos">Impactos de meteoritos históricos</h3>
+            <p>Impactos prehistóricos: Chicxulub</br>
+                El cataclismo provocado por el asteroide, que extinguió a los dinosaurios y otras especies y cambió el curso de la vida en la Tierra hace unos 65 millones de años, fue lo más cercano a un verdadero “Apocalipsis”. La cicatriz del colosal suceso se encuentra
+                bajo el Golfo de México, en lo que ahora se conoce cráter de Chicxulub que en maya significa "pulga del diablo" o "cuerno de venado prendido”. Uno de los científicos encargados de estudiar este fenómeno es Jaime Urrutia Fucugauchi, investigador
+                emérito del Instituto de Geofísica de la UNAM, quien relata en entrevista un aspecto novedoso de lo que pueden arrojar las investigaciones más recientes del cráter: la velocidad de la extinción. Los registros geológicos y fósiles refieren
+                que las cuatro extinciones masivas anteriores en la historia de este planeta fueron más “lentas y dolorosas”; no obstante, hace aproximadamente 65 millones de años todo habría sido más fulminante.</p>
+
+            <h3 id="asteroides-peligrosos">Medidas de Mitigación y Nivel de Peligro</h3>
+            <p>Didymos y Dimorfos (2022).<br> El asteroide Didymos y su pequeña luna Dimorphos formaba lo que se denomina un sistema de asteroides binario, lo que significa que la pequeña luna (Dimorphos) orbitaba el cuerpo más grande (Didymos).<br> Los
+                dos asteroides no representan una amenaza para la Tierra, pero debido a su paso relativamente cerca de ella, fueron elegidos como objetivo de la misión de la Prueba de Redirección de Doble Asteroide (DART) de la NASA, la primera misión
+                de la agencia para probar tecnología de defensa planetaria. Esta tecnología podría utilizarse algún día para desviar asteroides peligrosos en trayectoria de colisión con la Tierra.<br> DART impactó deliberadamente a Dimorphos el 26 de
+                septiembre de 2022. La NASA anunció el 11 de octubre de 2022 que el análisis de los datos obtenidos por el equipo de investigación de DART demostró que el impacto cinético de la nave espacial con su asteroide objetivo, la luna Dimorphos,
+                alteró con éxito la órbita del asteroide más pequeño. Esto marcó la primera vez que la humanidad alteró deliberadamente el movimiento de un objeto celeste y fue la primera demostración a gran escala de la tecnología de deflexión de asteroides.</p>
+
+            <p>Asteroide YR 24 (2024).<br> El asteroide 2024 YR4 es un asteroide cercano a la Tierra, lo que significa que es un asteroide que tiene una órbita que lo lleva al interior de la región de la órbita terrestre en el sistema solar. Se estima que
+                2024 YR4 mide entre 40 y 90 metros (130 a 300 pies) de ancho y tiene una probabilidad muy pequeña de hacer impacto con la Tierra el 22 de diciembre de 2032.<br> Este objeto es de particular interés para la defensa planetaria por dos razones:
+                1) es lo suficientemente grande como para ocasionar daños en un área localizada, en el caso poco probable de que choque con la Tierra y 2) aunque existe una posibilidad muy pequeña de que 2024 YR4 haga impacto con la Tierra en 2032, ha
+                superado el umbral de probabilidad de impacto del 1%, lo cual justifica la notificación formal sobre este objeto a otras agencias gubernamentales de Estados Unidos involucradas en la defensa planetaria, así como al Grupo Asesor para la
+                Planificación de Misiones Espaciales y a la Oficina de Asuntos del Espacio Ultraterrestre de las Naciones Unidas, según los estatutos de la Red Internacional de Alerta de Asteroides para tales notificaciones.<br> A medida que se obtengan
+                más observaciones de la órbita del asteroide, se conocerá mejor la probabilidad de su impacto. Es posible que se descarte el peligro de impacto de 2024 YR4, como ha sucedido con muchos otros objetos que han aparecido previamente en la
+                lista de riesgo de asteroides del Laboratorio de Propulsión a Chorro (JPL, por sus siglas en inglés) de la NASA. También es posible que la probabilidad de su impacto continúe aumentando.</p>
+
+            <p>Asteroide Itokawa (1998)<br> En 2005, 25143 Itokawa se convirtió en el primer asteroide del que se tomaron muestras y se trajeron a la Tierra para su análisis. La sonda espacial japonesa Hayabusa (halcón en japonés) aterrizó dos veces en el
+                asteroide y recogió una pequeña cantidad de polvo a pesar del fallo del mecanismo diseñado para tal fin. La muestra llegó a la Tierra el 13 de junio de 2010.<br> Las observaciones detalladas del asteroide realizadas por Hayabusa y el posterior
+                análisis de su polvo en laboratorios terrestres respaldan la conclusión de que Itokawa forma parte de los restos de un objeto mucho mayor que se desintegró tras una colisión. El polvo también confirma que los asteroides de tipo S (se refiere
+                al espectro de color del asteroide) como Itokawa, el tipo más común de asteroide en el cinturón principal interior, son la fuente del tipo de meteorito más común que se encuentra en la Tierra: la condrita común.<br> Los científicos creen
+                que Itokawa no es sólido, sino un montón de escombros, una aglomeración de rocas unidas débilmente por su gravedad mutua. Se observan pocos cráteres, presumiblemente porque cualquier impacto con la energía suficiente para crear un cráter
+                desprende rocas que rellenan el agujero.<br> Una señal de que el asteroide formó parte de un objeto mucho mayor es que muchas de las partículas de polvo capturadas muestran signos de haberse enfriado lentamente tras formarse en las profundidades
+                de un objeto rocoso a una temperatura de unos 800 grados Celsius (1500 grados Fahrenheit).</p>
+
+            <p>Asteroide Eros (1898)<br> Eros es famoso por ser el primer asteroide orbitado por una sonda espacial y el primer asteroide en el que una sonda aterrizó. Sin embargo, Eros fue importante para los astrónomos ya en 1898, cuando se convirtió en
+                el primer asteroide cercano a la Tierra (NEA) en ser descubierto.<br> La sonda espacial NEAR sobrevoló por primera vez Eros el 23 de diciembre de 1998, a una distancia de aproximadamente 3800 kilómetros (2400 millas) y descubrió que el
+                asteroide era más pequeño de lo esperado y tenía dos cráteres de tamaño mediano, una cresta superficial alargada y una densidad similar a la de la corteza terrestre.<br> Después de casi un año en órbita, tiempo durante el cual la nave
+                espacial fue rebautizada como "NEAR Shoemaker" en honor al pionero de la astrogeología Eugene Shoemaker, la misión llevó a cabo el primer aterrizaje de la humanidad en un asteroide el 12 de febrero de 2001. Eros estaba a 196 millones de
+                millas (315 millones de kilómetros) de la Tierra en ese momento. No se esperaba que la nave espacial sobreviviera al aterrizaje, pero sus instrumentos permanecieron operativos, lo que condujo a otro hito. "Este es el primer experimento
+                de rayos gamma realizado en la superficie de un cuerpo distinto a la Tierra", declaró el Dr. Jacob Trombka, del Centro de Vuelo Espacial Goddard de la NASA. "De hecho, podemos afirmar que es el primer estudio de viabilidad sobre cómo diseñar
+                un instrumento para su uso en un rover que pudiera seleccionar muestras de la superficie, buscar la presencia de agua o cartografiar la superficie para futuras actividades mineras".La nave espacial emitió su transmisión final desde la
+                superficie de Eros el 1 de marzo de 2001.<br> Antes de que el radar terrestre estuviera disponible para observar cuerpos extraterrestres, los astrónomos usaban Eros para ayudarlos a calcular la masa del sistema Tierra-Luna y el valor de
+                la unidad astronómica (la UA, equivalente a la distancia del Sol a la órbita de la Tierra).<br> Eros es un asteroide de tipo S, el más común en el cinturón interior de asteroides. Es un miembro típico del grupo Amors de asteroides no orbitales
+                (NEA), que cruzan la órbita de Marte pero no alcanzan la de la Tierra. A diferencia de los asteroides del cinturón principal, mucho más numerosos entre Marte y Júpiter, se cree que los NEA son cometas muertos o fragmentos de colisiones
+                de asteroides del cinturón principal.</p>
+
+            <h3 id="fisica-impactos">Impactos en el Mundo.</h3>
+            <p>El impacto de un meteorito en la Tierra puede tener efectos devastadores en múltiples aspectos, incluyendo económicos, ambientales, culturales y emocionles. A continuación, se detallan estos impactos basados en fuentes confiables y oficiales.</p>
+            <p>Impacto Económico.<br>
+                <ul>
+                    <li>Daños materiales: Un impacto de gran magnitud puede destruir infraestructuras, ciudades y zonas agrícolas, lo que conllevaría costos astronómicos para la reconstrucción.</li>
+                    <li>Economía global: La destrucción de centros económicos y la interrupción de cadenas de suministro podrían desencadenar una crisis económicas global. La pérdida de infraestructuras críticas, como puertos, aeropuertos y centros industriales,
+                        afectaría el comercio internacional.</li>
+                    <li>Recursos naturales: La alteración de los ecosistemas y la destrucción de recursos naturales, como tierras fértiles y fuentes de agua, tendría un impacto negativo en la producción agrícola y la disponibilidad de recursos básicos.</li>
+                </ul>
+            </p>
+            <p>Impacto Ambiental.<br>
+                <ul>
+                    <li>Cambio climático:Un impacto masivo puede liberar grandes cantidades de polvo y gases en la atmósfera, bloqueando la luz solar y causando un enfriamiento global, conocido como "Invierno nuclear". Esto detendría la fotosíntesis y afectaría
+                        la cadena trófica.</li>
+                    <li>Extinciones masivas: Como ocurrió con el impacto de Chicxulub, que contribuyó a la extinción de los dinosaurios, un impacto similar podría causasr la extinción de un gran número de especies, lo que tendría un efecto dominó en los ecosistemas.</li>
+                    <li>Alteración de los océanos: El impacto puede causar tsunamis gigantescos, mezclar las aguas oceánicas y alterar la química del océano, lo que afectaría la vida marina y la regulación del clima global.</li>
+                </ul>
+            </p>
+            <p>Impacto Cultural y Emocional.<br>
+                <ul>
+                    <li>Psicología colectiva: El miedo y la incertidumbre ante un impacto inminente podría causar pánico y alterar la psicología colectiva. La población podría experimentar ansiedad, depresión y otros transtornos.</li>
+                    <li>Herencia cultural: La destrucción de sitios históricos y culturales sería un golpe para la herencia humana. La pérdida de monumentos, obras de arte y lugares sagradoos tendría un impacto porofudo en la identidad cultural de las comunidades
+                        afectadas.</li>
+                    <li>Resisliencia y adaptacion: A pesar de los desafíos, la humanidad ha demostrado capacidad de resiliencia. La superación de desastres pasados, como el impacto de Chicxulub, ha llevado a la evolución y adaptación de las especies. </li>
+                </ul>
+            </p>
+            <p> Como conclusión de esto, podemos llegar a la resolución de que un meteorito en la Tierra tendría cosecuencias devastadoras en todos los aspectos de la vida humana y del planeta. La prevención y la preparación son cruciales para mitigar estos
+                efectos.</p>
+
+        </section>
+
+        <section id="Recursos" class="content-section">
+            <h2 id="cursos-fisica">Recursos</h2>
+            <ul>
+                <li><a href="#cursos-fisica">Cursos de Física</a></li>
+                <li><a href="#mecanica-celeste-estudiantes">Curso de mecánica celeste para estudiantes</a></li>
+                <li><a href="#mecanica-celeste-profesionales">Curso de mecánica celeste para profesionales</a></li>
+                <li><a href="#dataset">Dataset</a></li>
+                <li><a href="#ia-jupiter">IA-Júpiter</a></li>
+            </ul>
+        </section>
+
+        <section id="Simulations" class="content-section">
+            <h2>Simulaciones</h2>
+            <h3 id="orbits-simulation">Órbitas</h3>
+            <p>Aquí podríamos integrar una simulación de órbitas si tienes una en mente.</p>
+
+            <h3 id="impact-map-simulation">Mapa de Zona de Impacto</h3>
+            <div id="impact-simulator-container" class="simulation-container">
+                <!-- Aquí se incrustará la simulación de impacto de asteroides -->
+                <!-- La estructura interna de esta sección se generará con el código de la simulación -->
+            </div>
+        </section>
+
+        <section id="Contacto" class="content-section">
+            <h2>Contacto</h2>
+            <p>Si deseas ponerte en contacto con nosotros, puedes enviarnos un correo electrónico a <a href="mailto:divulgatron_oficial@gmail.com">divulgatron_oficial@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Divulgatron. Todos los derechos reservados.</p>
+        <div class="social-links-footer">
+            <a href="https://whatsapp.com/channel/0029VbBNlWi7oQhhSEgdog00" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp" class="social-icon"></a>
+            <a href="https://www.instagram.com/divulgatron.uac/" target="_blank"><img src="instagram-icon.png" alt="Instagram" class="social-icon"></a>
+            <a href="https://www.facebook.com/share/178SV9W4tz/" target="_blank"><img src="facebook-icon.png" alt="Facebook" class="social-icon"></a>
+        </div>
+    </footer>
+
+    <!-- Scripts de la simulación de impacto DEBEN ir aquí -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script-impact-simulator.js"></script>
+    <!-- Tu script principal si tienes uno -->
+    <script src="main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Órbita 3D Asteroide y Tierra</title>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<style>
+  body { background-color: #0b1020; color: white; font-family: sans-serif; text-align:center; }
+  #grafica { width: 100vw; height: 90vh; }
+  button { margin: 6px; padding: 8px 12px; border: none; border-radius: 6px; background:#1f8cff; color:white; cursor:pointer; }
+</style>
+</head>
+<body>
+  <h2>Simulación 3D: órbita del asteroide y la Tierra 🌍☄️</h2>
+  <button onclick="dibujar()">Mostrar órbita</button>
+  <div id="grafica"></div>
+
+<script>
+function dibujar() {
+  // Parámetros orbitales (ejemplo: 433 Eros)
+  const a = 1.458;  // AU
+  const e = 0.222;
+  const i = 10.829 * Math.PI/180;
+  const Omega = 304.4 * Math.PI/180;
+  const omega = 178.8 * Math.PI/180;
+
+  const N = 800;
+  const theta = Array.from({length:N}, (_,k)=>2*Math.PI*k/N);
+
+  // Orbita perifocal
+  const r = theta.map(t => a*(1 - e**2)/(1 + e*Math.cos(t)));
+  const x = r.map((r,t)=>r*Math.cos(theta[t]));
+  const y = r.map((r,t)=>r*Math.sin(theta[t]));
+
+  // Transformación a coordenadas 3D eclípticas
+  const X = [], Y = [], Z = [];
+  for (let k=0;k<N;k++){
+    const cx = x[k], cy = y[k];
+    X.push((Math.cos(Omega)*Math.cos(omega)-Math.sin(Omega)*Math.sin(omega)*Math.cos(i))*cx +
+           (-Math.cos(Omega)*Math.sin(omega)-Math.sin(Omega)*Math.cos(omega)*Math.cos(i))*cy);
+    Y.push((Math.sin(Omega)*Math.cos(omega)+Math.cos(Omega)*Math.sin(omega)*Math.cos(i))*cx +
+           (-Math.sin(Omega)*Math.sin(omega)+Math.cos(Omega)*Math.cos(omega)*Math.cos(i))*cy);
+    Z.push((Math.sin(omega)*Math.sin(i))*cx + (Math.cos(omega)*Math.sin(i))*cy);
+  }
+
+  // Tierra (órbita circular)
+  const Xt = theta.map(t => Math.cos(t));
+  const Yt = theta.map(t => Math.sin(t));
+  const Zt = theta.map(t => 0);
+
+  // Trazas
+  const sol = {x:[0], y:[0], z:[0], type:'scatter3d', mode:'markers',
+               marker:{color:'orange', size:6}, name:'Sol'};
+  const orbAst = {x:X, y:Y, z:Z, type:'scatter3d', mode:'lines',
+                  line:{color:'red'}, name:'Órbita asteroide'};
+  const orbTierra = {x:Xt, y:Yt, z:Zt, type:'scatter3d', mode:'lines',
+                     line:{color:'blue'}, name:'Órbita Tierra'};
+
+  const layout = {
+    paper_bgcolor:'rgba(0,0,0,1)',
+    scene:{
+      xaxis:{title:'X [AU]', color:'white'},
+      yaxis:{title:'Y [AU]', color:'white'},
+      zaxis:{title:'Z [AU]', color:'white'},
+      aspectmode:'manual',
+      aspectratio:{x:1,y:1,z:0.5},
+      camera:{eye:{x:-1.8,y:-1.8,z:1}}
+    },
+    showlegend:true
+  };
+
+  Plotly.newPlot('grafica', [sol, orbTierra, orbAst], layout, {responsive:true});
+}
+</script>
+</body>
+</html>
+
